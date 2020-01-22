@@ -1,0 +1,25 @@
+
+Add Patient :
+mutation {
+  addPatient (newPatientData:{name:"norha", gender: "female", age: 30}){
+    id
+    name
+    age
+  	gender
+  }
+}
+
+find All Ptients :
+query {
+  patients {
+    id
+    name
+    age
+    gender
+  }
+}
+
+Remove Patient :
+mutation{
+  removePatient(id:"norhha")
+}
